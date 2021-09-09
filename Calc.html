@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .option{
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 10px;
+            background: lightgray;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        @media(min-width:500px){
+            .option{
+
+            width: 10%;
+          
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>CALCULATOR</h1>
+                <input onkeypress="return keypressHandler(event)" type="text" style="width:50%" id="input"> 
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <span id="multiply" class="option bg-danger">multiply</span>
+                <span id="divide" class="option bg-dark">divide</span>
+                <span id="add" class="option bg-success">add</span>
+                <span id="sub" class="option bg-primary">substract</span>
+                <span id="mod" class="option">modulus</span>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <button id="calculate" class="btn btn-success" style="margin-top: 15px;width:30%" id="calculate">Calculate</button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1 id="result">RESULT : -----</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./Calc.js"></script>
+</body>
+</html>
